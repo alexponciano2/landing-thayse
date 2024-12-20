@@ -3,7 +3,7 @@
 .s_hero {
     position: relative;
     overflow: hidden;
-    background-color: $corDescricao;
+    background-color: $fundoBege;
     @media screen and (min-width: 769px) {
         height: 90vh;
     }
@@ -59,7 +59,7 @@
     .hero_buttonS {
         @include descricao($corBranco, 500);
         border: none;
-        background-color: $corItens;
+        background-color: $fundoBotoes;
         border-radius: 2rem;
         padding: 1rem 3rem;
         text-align: center;
