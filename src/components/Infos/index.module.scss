@@ -2,8 +2,9 @@
 
 .s_infos {
     min-height: 100vh;
-    background-color: $corItens;
+    background-color: $fundonavbar;
     // position: sticky;
+    border-radius: 1rem;
     
     .tabs {
         padding-top: 5rem;
@@ -11,6 +12,7 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
+        border-radius: 1rem;
         
         &__button {
             padding: 0.5rem 0;
@@ -19,10 +21,12 @@
             border-bottom: 5px solid transparent;
             @include itens($corDescricao);
             text-transform: uppercase;
+            border-radius: 1rem;
         }
         &__buttonIsActive {
             transition: all .5s ease 0s;
-            border-bottom: 5px solid $corDescricao;    
+            border-bottom: 5px solid $corDescricao;
+            border-radius: 1rem;    
         }
     }
 
@@ -30,28 +34,35 @@
         
         &__psicoterapia {
             padding-top: 3rem;
+            border-radius: 1rem;
 
             &__img {
                 text-align: center;
                 @include mq('lg') {
                     display: block;
+                    border-radius: 1rem;
+                    
                 }
                 &__foto {
                     @media screen and (max-width: 576px) {
                             height: 200px;
+                            border-radius: 1rem;
                     }
                 }
 
                 &__forense {
                     @include mq('lg') {
                         // display: none;
+                            border-radius: 1rem;
                     }
                     &__img {
                         @media screen and (max-width: 576px) {
-                            height: 400px
+                            height: 400px;
+                            border-radius: 1rem;
                         }
                         height: 38rem;
-                        object-fit: cover
+                        object-fit: cover;
+                        border-radius: 1rem;
                         
                     }
                 }
@@ -61,19 +72,23 @@
                 @include tituloSecao($corDescricao);
                 text-align: end;
                 &__forense {
-                    text-align: start
+                    text-align: start;
+                    border-radius: 1rem;
                 }
 
                 @media screen and (max-width: 315px) {
-                    font-size: 2rem
+                    font-size: 2rem;
+                    border-radius: 1rem;
                 }
             }
             &__desc {
                 @include descricao;
                 text-align: end;
+                border-radius: 1rem;
 
                 &__forense {
-                    text-align: start
+                    text-align: start;
+                    border-radius: 1rem;
                 }
             }
         }
