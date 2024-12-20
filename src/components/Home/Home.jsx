@@ -1,6 +1,6 @@
 import styles from './index.module.scss'
 import clsx from 'clsx/dist/clsx.m'
-import foto from './assets/thayse.png'
+import foto from './assets/CarolinaFill6.png'
 import Container from 'react-bootstrap/Container';
 
 function Home() {
@@ -15,7 +15,7 @@ function Home() {
                     <ul className={styles.ul}>
                         <li className={clsx(styles.li, styles.items)}>
                             <div className={clsx(styles.hero_texts)}>
-                                <h1>Thayse Labanca</h1>
+                                <h1>Carolina Reis</h1>
                                 <p className={styles.desc}>Promovendo o bem-estar emocional, cultivando o equilíbrio interior e guiando você rumo a uma vida plena e significativa.</p>
                             </div>
                             <div className={clsx(styles.hero_buttonsQuote)}>
