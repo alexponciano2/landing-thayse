@@ -4,7 +4,6 @@
     min-height: 100vh;
     background-color: $fundonavbar;
     // position: sticky;
-    border-radius: 1rem;
     
     .tabs {
         padding-top: 5rem;
@@ -12,7 +11,6 @@
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        border-radius: 1rem;
         
         &__button {
             padding: 0.5rem 0;
@@ -25,8 +23,7 @@
         }
         &__buttonIsActive {
             transition: all .5s ease 0s;
-            border-bottom: 5px solid $corDescricao;
-            border-radius: 1rem;    
+            border-bottom: 5px solid $corDescricao;   
         }
     }
 
@@ -40,25 +37,21 @@
                 text-align: center;
                 @include mq('lg') {
                     display: block;
-                    border-radius: 1rem;
                     
                 }
                 &__foto {
                     @media screen and (max-width: 576px) {
                             height: 200px;
-                            border-radius: 1rem;
                     }
                 }
 
                 &__forense {
                     @include mq('lg') {
                         // display: none;
-                            border-radius: 1rem;
                     }
                     &__img {
                         @media screen and (max-width: 576px) {
                             height: 400px;
-                            border-radius: 1rem;
                         }
                         height: 38rem;
                         object-fit: cover;
