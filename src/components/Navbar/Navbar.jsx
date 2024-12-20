@@ -1,5 +1,5 @@
 import Container from 'react-bootstrap/Container';
-import logo from './assets/logo.png'
+import logo from './assets/logo2.png'
 import styles from './index.module.scss'
 
 function NavbarHome() {
