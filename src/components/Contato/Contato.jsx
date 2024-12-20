@@ -11,13 +11,13 @@ const Contato = () => {
                 <h4 data-aos="slide-right" data-aos-duration="1500" className={styles.desc}>Atendimento em todo o território nacional e a brasileiros que residem no exterior</h4>
                 <Row data-aos="slide-right" data-aos-duration="1500" className={clsx("pe-5 ps-5 pb-5")}>
                     <Col sm={4} className={styles.col}>
-                        <AiOutlineMail className={styles.icon} size={50} color="white" /> <a href="mailto:thayselabanca@yahoo.com.br" className={styles.item}>thayselabanca@yahoo.com.br</a>
+                        <AiOutlineMail className={styles.icon} size={50} color="white" /> <a href="mailto:carolinareis@hotmail.com.br" className={styles.item}>carolinareis@hotmail.com</a>
                     </Col>
                     <Col sm={4} className={styles.col}>
-                        <AiOutlineInstagram className={styles.icon} size={50} color="white" /> <a href="https://www.instagram.com/thayselabancapsi/" className={styles.item}>@thayselabancapsi</a>
+                        <AiOutlineInstagram className={styles.icon} size={50} color="white" /> <a href="https://www.instagram.com/carolinareis/" className={styles.item}>@carolinareis</a>
                     </Col>
                     <Col sm={4} className={styles.col}>
-                        <AiOutlineWhatsApp className={styles.icon} size={50} color="white" /> <a href="https://wa.link/fy7tjl" className={styles.item}>(77) 98811-5001</a>
+                        <AiOutlineWhatsApp className={styles.icon} size={50} color="white" /> <a href="https://wa.link/fy7tjl" className={styles.item}>(11) 98811-5001</a>
                     </Col>
                 </Row>
                 <button data-aos="fade-out" data-aos-duration="1000" data-aos-delay="1000" className={styles.e_button}>
