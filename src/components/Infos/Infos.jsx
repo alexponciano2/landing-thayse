@@ -3,7 +3,7 @@ import styles from './index.module.scss'
 import { useState } from 'react';
 import clsx from 'clsx/dist/clsx.m';
 import cerebro from './assets/cerebro.png'
-import thayse from './assets/thayse.png'
+import foto from './assets/Carolina.jpg'
 
 const Infos = () => {
 
@@ -59,7 +59,7 @@ const Infos = () => {
                                 </p>
                             </Col>
                             <Col lg={6} className={clsx(styles.list__psicoterapia__img, styles.list__psicoterapia__img__forense)}>
-                                <img className={styles.list__psicoterapia__img__forense__img} src={thayse} alt="" />
+                                <img className={styles.list__psicoterapia__img__forense__img} src={foto} alt="" />
                             </Col>
                         </Row>
                     </div>
