@@ -1,7 +1,7 @@
 @use '../../styles/variaveis' as *;
 
 .s_navbar {
-    background-color: $corDescricao;
+    background-color: $fundonavbar;
     z-index: 0;
 }
 
@@ -20,7 +20,7 @@
 .imgDiv {
 
     &__img {
-        height: 3.75rem;
+        height: 7.75rem;
         padding: 0.25rem;
 
         @media screen and (max-width: 300px) {
@@ -30,7 +30,7 @@
 }
 
 .items {
-    @include descricao($corPreto, 500);
+    @include descricao($corBranco, 500);
     margin-left: 1rem;
 
     @include mq('md') {
