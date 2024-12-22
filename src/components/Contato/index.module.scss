@@ -7,32 +7,35 @@
 }
 
 .e_button {
+    position: fixed; // Define a posição fixa
+    right: 2rem; // Distância da borda direita
+    bottom: 2rem; // Distância da borda inferior
+    z-index: 1000; // Garante que o botão fique acima de outros elementos
     border-radius: 2rem;
     background-color: $whatsapp;
     padding: 1rem 3rem;
-    margin: 0 auto;
     border: none;
+
     @include mq('sm') {
-        display: block;
+        padding: 0.8rem 2rem;
+        right: 1rem;
+        bottom: 1rem;
     }
 
-    .e_Btext { // Texto dos botões
+    .e_Btext {
         @include descricao($corBranco, 500);
         text-align: center;
         background-color: transparent;
-        
-        &__m_contato { // Modificador do texto do botão (CONTATO)
-            color: $corPreto;
-        }
     }
 
     &:hover {
-        transition: all .25s;
+        transition: all 0.25s;
         color: $corPreto;
         background-color: rgba($color: $whatsapp, $alpha: 0.75);
     }
-
 }
+
+
 
 .titulo {
     padding-top: 2.5rem;
