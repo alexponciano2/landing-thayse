@@ -2,26 +2,36 @@
 
 .s_navbar {
     background-color: $fundonavbar;
-    z-index: 0;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1.5rem;
     height: 5rem;
 
     @include mq('md') {
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        gap: 1rem;
     }
 }
 
 .imgDiv {
-
     &__img {
         height: 4.55rem;
         padding: 0.25rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
 
         @media screen and (max-width: 300px) {
             height: 2.5rem;
@@ -29,11 +39,45 @@
     }
 }
 
-.items {
-    @include descricao($corBranco, 500);
-    margin-left: 1rem;
+.links {
+    display: flex;
+    gap: 1.5rem;
 
     @include mq('md') {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+}
+
+.items {
+    @include descricao($corBranco, 500);
+    position: relative;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: lighten($corBranco, 20%);
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background-color: $corBranco;
+        left: 50%;
+        bottom: -0.25rem;
+        transform: translateX(-50%);
+        transition: width 0.3s ease;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    @include mq('md') {
+        display: block;
     }
 }
