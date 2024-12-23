@@ -13,13 +13,10 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1.5rem;
-    height: 5rem;
+    height: 6rem;
 
     @include mq('md') {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
+        flex-direction: row; // Mantém o layout padrão no desktop
     }
 }
 
@@ -31,11 +28,14 @@
 
         &:hover {
             transform: scale(1.1);
-        }
+        }}}
 
-        @media screen and (max-width: 300px) {
-            height: 2.5rem;
-        }
+.hamburger {
+    display: none;
+    cursor: pointer;
+
+    @include mq('md') {
+        display: block; // Exibe o ícone apenas em telas pequenas
     }
 }
 
@@ -44,9 +44,25 @@
     gap: 1.5rem;
 
     @include mq('md') {
-        display: flex;
         flex-direction: column;
         gap: 0.75rem;
+        position: fixed;
+        top: 5rem; // Ajuste conforme a altura do navbar
+        right: 0;
+        background-color: $fundonavbar;
+        width: 100%;
+        max-width: 250px;
+        height: 100vh;
+        padding: 2rem;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 999;
+    }
+}
+
+.linksActive {
+    @include mq('md') {
+        transform: translateX(0); // Exibe o menu quando ativado
     }
 }
 
