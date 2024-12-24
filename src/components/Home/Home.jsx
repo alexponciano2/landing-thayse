@@ -1,6 +1,6 @@
 import styles from './index.module.scss'
 import clsx from 'clsx/dist/clsx.m'
-import foto from './assets/CarolinaFill6.png'
+import foto from './assets/CarolinaFill7.png'
 import Container from 'react-bootstrap/Container';
 
 function Home() {
